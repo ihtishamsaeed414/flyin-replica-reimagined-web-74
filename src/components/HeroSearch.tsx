@@ -9,10 +9,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { 
   ArrowRight, 
   Calendar as CalendarIcon,
-  Airplane,
-  Hotel,
+  Airplay,
+  Building,
   Bed,
-  Activity
+  MapPin
 } from "lucide-react";
 
 const HeroSearch = () => {
@@ -40,14 +40,14 @@ const HeroSearch = () => {
               value="flights"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Airplane className="h-4 w-4" />
+              <Airplay className="h-4 w-4" />
               <span>Flights</span>
             </TabsTrigger>
             <TabsTrigger 
               value="hotels"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Hotel className="h-4 w-4" />
+              <Building className="h-4 w-4" />
               <span>Hotels</span>
             </TabsTrigger>
             <TabsTrigger 
@@ -61,14 +61,14 @@ const HeroSearch = () => {
               value="staycations"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Hotel className="h-4 w-4" />
+              <Building className="h-4 w-4" />
               <span>Staycations</span>
             </TabsTrigger>
             <TabsTrigger 
               value="activities"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Activity className="h-4 w-4" />
+              <MapPin className="h-4 w-4" />
               <span>Activities</span>
             </TabsTrigger>
           </TabsList>
