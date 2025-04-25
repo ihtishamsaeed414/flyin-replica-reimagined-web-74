@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,10 +8,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { 
   ArrowRight, 
   Calendar as CalendarIcon,
-  Airplay,
-  Building,
-  Bed,
-  MapPin
+  ArrowLeft,
+  ArrowUp,
+  ArrowDown,
+  Search
 } from "lucide-react";
 
 const HeroSearch = () => {
@@ -40,35 +39,35 @@ const HeroSearch = () => {
               value="flights"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Airplay className="h-4 w-4" />
+              <ArrowUp className="h-4 w-4" />
               <span>Flights</span>
             </TabsTrigger>
             <TabsTrigger 
               value="hotels"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Building className="h-4 w-4" />
+              <Search className="h-4 w-4" />
               <span>Hotels</span>
             </TabsTrigger>
             <TabsTrigger 
               value="packages"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Bed className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4" />
               <span>Flight + Hotel</span>
             </TabsTrigger>
             <TabsTrigger 
               value="staycations"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <Building className="h-4 w-4" />
+              <ArrowDown className="h-4 w-4" />
               <span>Staycations</span>
             </TabsTrigger>
             <TabsTrigger 
               value="activities"
               className="flex items-center gap-2 py-3 text-white data-[state=active]:text-[#2F3C7E] data-[state=active]:bg-white"
             >
-              <MapPin className="h-4 w-4" />
+              <ArrowLeft className="h-4 w-4" />
               <span>Activities</span>
             </TabsTrigger>
           </TabsList>
